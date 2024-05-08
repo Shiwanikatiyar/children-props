@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>children props and component</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // Your JSX code here
+
+
+      const root = document.getElementById("root");
+
+      function Gallery({children}) {
+        return <div style = {{display : "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "10px"}} >
+           {children}
+          <h1 style = {{textAlign: "center"}}>Galary</h1>                
+          </div>;
+      } 
+      
+    const app =
+   
+   <>
+      <Gallery>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFKgIvsewzvx8BsTNSla-nMN1fqa--W4KCw&s" alt=""/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7Fnx0Fx2kOHAU9715pcAAwfJHrML3rml7Q&s" />
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOcZEFMGdlmOWa51OBKRMgV5wU4UItbEZWg&s" />
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7Fnx0Fx2kOHAU9715pcAAwfJHrML3rml7Q&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrX3-W7fW_iW_D9ExuxOY1ajdvd52_tow3EA&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVUrarNFcyJSGjwZR13oYmQhUi_FmDns93w&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1uZTBlxjOfVEiZsIt9FSo_bkxgEb6_OslQ&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFKgIvsewzvx8BsTNSla-nMN1fqa--W4KCw&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFKgIvsewzvx8BsTNSla-nMN1fqa--W4KCw&s" /> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7Fnx0Fx2kOHAU9715pcAAwfJHrML3rml7Q&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOcZEFMGdlmOWa51OBKRMgV5wU4UItbEZWg&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7Fnx0Fx2kOHAU9715pcAAwfJHrML3rml7Q&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrX3-W7fW_iW_D9ExuxOY1ajdvd52_tow3EA&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVUrarNFcyJSGjwZR13oYmQhUi_FmDns93w&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1uZTBlxjOfVEiZsIt9FSo_bkxgEb6_OslQ&s" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFKgIvsewzvx8BsTNSla-nMN1fqa--W4KCw&s" />
+       </Gallery>
+</>
+
+      ReactDOM.createRoot(root).render(app);
+
+    </script>
+  </body>
+</html>
+
+  
